@@ -1,0 +1,25 @@
+.slider {
+  position: relative;
+  /* border: 2px solid red; */
+  padding-bottom: 29.94%;
+}
+.slider > img {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  /* 전환효과 */
+  transition-duration: 1s;
+}
+.slider > img.show {
+  opacity: 1;
+}
+.indicator {
+  position: absolute;
+  z-index: 99;
+  opacity: 1;
+  border: 1px solid red;
+}
+.indicator > a.show {
+  color: red;
+}
